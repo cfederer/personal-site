@@ -6,31 +6,7 @@ const articles = [
     category: "Parenting · AI",
     excerpt:
       "Thoughts on what to teach kids about AI, careers, and how to develop judgment in an AI-powered world.",
-  },
-  {
-    slug: "getting-started-with-llms",
-    title: "Getting Started with Large Language Models",
-    date: "Feb 10, 2026",
-    category: "AI / LLMs",
-    excerpt:
-      "An accessible introduction to LLMs — how they work, when to use them, and practical tips for getting started in your own projects.",
-  },
-  {
-    slug: "eda-patterns",
-    title: "Exploratory Data Analysis Patterns I Keep Coming Back To",
-    date: "Jan 28, 2026",
-    category: "Data Science",
-    excerpt:
-      "A collection of Pandas and visualization patterns that have saved me hours during the early stages of every data project.",
-  },
-  {
-    slug: "mlops-in-practice",
-    title: "MLOps in Practice: From Notebook to Production",
-    date: "Jan 14, 2026",
-    category: "Machine Learning",
-    excerpt:
-      "What actually happens when you try to deploy a model at scale — the infrastructure, the gotchas, and the lessons learned.",
-  },
+  }
 ];
 
 export default function Home() {
@@ -51,7 +27,7 @@ export default function Home() {
               About
             </a>
             <a
-              href="https://github.com/calliefederer"
+              href="https://github.com/cfederer"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-zinc-900 transition-colors"
@@ -59,7 +35,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/calliefederer"
+              href="https://linkedin.com/in/callie-federer"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-zinc-900 transition-colors"
@@ -144,7 +120,7 @@ export default function Home() {
               </p>
               <div className="flex items-center gap-5 pt-2">
                 <a
-                  href="https://github.com/calliefederer"
+                  href="https://github.com/cfederer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-semibold text-zinc-900 border-b border-zinc-900 hover:text-zinc-500 hover:border-zinc-500 transition-colors pb-0.5"
@@ -152,7 +128,7 @@ export default function Home() {
                   GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/calliefederer"
+                  href="https://linkedin.com/in/callie-federer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-semibold text-zinc-900 border-b border-zinc-900 hover:text-zinc-500 hover:border-zinc-500 transition-colors pb-0.5"
