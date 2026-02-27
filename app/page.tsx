@@ -69,9 +69,10 @@ export default function Home() {
           </p>
           <div className="divide-y divide-zinc-100">
             {articles.map((article) => (
-              <article
+              <a
                 key={article.slug}
-                className="group py-8 flex items-start justify-between gap-8 cursor-pointer"
+                href={`/posts/${article.slug}`}
+                className="group block py-8 flex items-start justify-between gap-8"
               >
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
@@ -93,7 +94,7 @@ export default function Home() {
                     Read →
                   </span>
                 </div>
-              </article>
+              </a>
             ))}
           </div>
         </section>
@@ -169,7 +170,7 @@ export default function Home() {
           <span className="text-sm text-zinc-400">© 2026 Callie Federer</span>
           <div className="flex items-center gap-6 text-sm text-zinc-400">
             <a
-              href="https://github.com/calliefederer"
+              href="https://github.com/cfederer"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-zinc-900 transition-colors"
@@ -177,7 +178,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/calliefederer"
+              href="https://linkedin.com/in/callie-federer"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-zinc-900 transition-colors"
