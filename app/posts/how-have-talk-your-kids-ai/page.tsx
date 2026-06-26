@@ -14,10 +14,6 @@ export default function PostPage() {
             src="/images/how-talk-kids-ai-placeholder.png"
             alt="How to Have The Talk With Your Kids (About AI)"
             className="w-full max-w-2xl mb-8 rounded"
-            onError={(e) => {
-              // fallback to svg placeholder if png not uploaded yet
-              (e.target as HTMLImageElement).src = "/images/how-talk-kids-ai-placeholder.svg";
-            }}
           />
 
           <div className="prose max-w-none text-zinc-700">
