@@ -104,21 +104,38 @@ export default function Home() {
           <p className="text-xs font-semibold tracking-widest uppercase text-zinc-400 mb-12">
             About
           </p>
+          <img
+            src="/images/hike-photo.jpeg"
+            alt="Callie hiking in the Rockies with her husband and dogs"
+            className="w-full max-w-2xl mb-12 rounded"
+          />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div className="space-y-5 text-zinc-600 leading-relaxed">
               <p>
-                Hi, I&apos;m Callie — a data scientist and ML practitioner with a passion
-                for turning complex data into clear, actionable insights.
+                Hi, I'm Callie.
               </p>
               <p>
-                I&apos;m particularly interested in large language models, applied machine
-                learning, and building systems that are both technically sound and
-                genuinely useful.
+                I've always loved the space where technology meets real-world decision making.
+                Today I lead AI and data science teams, building products that help people work smarter, 
+                make better decisions, and solve problems that aren't obvious at first glance.
               </p>
               <p>
-                This site is where I think out loud — sharing articles, project writeups,
-                and notes on what I&apos;m learning.
+                I've worked on everything from AI fraud detection and pricing engines 
+                to generative AI assistants and an AI-powered calculus tutor that led 
+                to Pearson's first NeurIPS paper. What keeps me interested isn't just the latest model, 
+                although that is usually fun, but it's figuring out where AI actually belongs and building products that people trust.
               </p>
+              <p>
+                I earned a B.S. in Computer Science, a Ph.D. in Computational Bioscience from the University of Colorado Anschutz Medical Campus, 
+                and an Executive MBA from Washington University in St. Louis. Along the way I've been fortunate to lead incredible teams, 
+                speak at industry conferences, and work across healthcare, logistics, education, and SaaS.
+              </p>
+              <p>
+                I also have a reputation for being the 'AI-expert who hates AI'. That's not true,
+                I love AI enough to use it to make this website. I'm amazed at the work that can be done.
+                I also believe in being clear on limitations and the value of human intuition. Plus,
+                I think it's really important to touch grass and get away from technology. 
+              </p>              
               <div className="flex items-center gap-5 pt-2">
                 <a
                   href="https://github.com/cfederer"
@@ -144,11 +161,11 @@ export default function Home() {
               </p>
               <ul className="space-y-4">
                 {[
-                  "Large Language Models & GenAI",
-                  "Applied Machine Learning",
-                  "Data Science & EDA",
+                  "AI/ML Strategy & Governance",
+                  "GenAI Enablement",
+                  "Applied ML: LLMs, RAG, NLP, Computer Vision",
                   "MLOps & Production Systems",
-                  "Personal Projects",
+                  "Team Building",
                 ].map((area) => (
                   <li
                     key={area}
