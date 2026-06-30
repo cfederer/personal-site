@@ -1,11 +1,19 @@
 const articles = [
   {
+    slug: "signalstack",
+    title: "Use AI to Teach You AI (Don't Outsource Your Brain)",
+    date: "Jun 30, 2026",
+    category: "Side Projects · AI",
+    excerpt:
+      "Why I built a feed that aggregates my newsletters and podcasts instead of asking just AI to summarize them for me.",
+  },
+  {
     slug: "meal-prep-app",
     title: "I Built an End to End Meal Prep App & I Hated It",
     date: "Jun 30, 2026",
     category: "Side Projects · AI",
     excerpt:
-      "Building a meal-planning app taught me the most valuable AI systems don't replace decisions, they remove the boring work and leave you in control of the parts that need judgment.",
+      "Building a meal-planning app reminded me how to start small and automate the actual grunt work, not the fun parts.",
   },
   {
     slug: "how-have-talk-your-kids-ai",
@@ -13,7 +21,7 @@ const articles = [
     date: "Feb 26, 2026",
     category: "Parenting · AI",
     excerpt:
-      "Thoughts on what to teach kids about AI, careers, and how to develop judgment in an AI-powered world.",
+      "Thoughts on what to teach kids about AI and careers from a sleep-deprived mom on maternity leave.",
   }
 ];
 
