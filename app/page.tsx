@@ -1,25 +1,53 @@
-const articles = [
+const focusAreas = [
   {
-    slug: "signalstack",
-    title: "Use AI to Teach You AI (Don't Outsource Your Brain)",
-    date: "Jun 30, 2026",
-    category: "Side Projects · AI",
-    excerpt:
-      "Why I built a feed that aggregates my newsletters and podcasts instead of asking just AI to summarize them for me.",
+    title: "Product Strategy",
+    description:
+      "From identifying opportunities to shipping products that deliver measurable business value.",
   },
+  {
+    title: "Enterprise AI Adoption",
+    description:
+      "Helping organizations move from AI experimentation to everyday use.",
+  },
+  {
+    title: "Applied Machine Learning",
+    description:
+      "Building production systems across LLMs, forecasting, NLP, computer vision, and predictive modeling.",
+  },
+  {
+    title: "Responsible AI",
+    description:
+      "Governance, evaluation, and practical approaches that make AI reliable and trustworthy.",
+  },
+  {
+    title: "Leadership & Team Building",
+    description:
+      "Growing high-performing AI organizations and mentoring the next generation of technical leaders.",
+  },
+];
+
+const articles = [
   {
     slug: "meal-prep-app",
     title: "I Built an End to End Meal Prep App & I Hated It",
     date: "Jun 30, 2026",
-    category: "Side Projects · AI",
+    category: "Side Projects",
     excerpt:
       "Building a meal-planning app reminded me how to start small and automate the actual grunt work, not the fun parts.",
+  },
+  {
+    slug: "signalstack",
+    title: "Use AI to Teach You AI (Don't Outsource Your Brain)",
+    date: "Mar 28, 2026",
+    category: "Side Projects",
+    excerpt:
+      "Why I built a feed that aggregates my newsletters and podcasts instead of asking just AI to summarize them for me.",
   },
   {
     slug: "how-have-talk-your-kids-ai",
     title: "How to Have “The Talk” With Your Kids (About AI)",
     date: "Feb 26, 2026",
-    category: "Parenting · AI",
+    category: "Parenting",
     excerpt:
       "Thoughts on what to teach kids about AI and careers from a sleep-deprived mom on maternity leave.",
   }
@@ -66,36 +94,37 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src="/images/mountain1.jpeg"
-            alt=""
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-slate/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate/80 via-slate/40 to-slate/40" />
-        </div>
-        <div className="mx-auto max-w-5xl px-6 py-40 md:py-56">
-          <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-6">
-            AI &amp; Data Science Leader
-          </p>
-          <h1 className="font-serif text-5xl md:text-6xl leading-tight text-cream max-w-2xl mb-6">
-            AI strategy with a <em className="italic text-sand">human</em> perspective.
+      <section className="bg-cream">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:py-32 flex flex-col items-center text-center">
+          <img src="/images/logo-transparent.png" alt="" className="h-32 w-32 object-contain mb-8" />
+          <h1 className="font-serif text-5xl md:text-6xl tracking-wide text-pine mb-8">
+            CALLIE FEDERER
           </h1>
-          <p className="max-w-lg text-lg leading-relaxed text-cream/80 mb-10">
-            Bridging people, technology, and real-world impact.
+          <div className="flex items-center gap-3 mb-8">
+            <span className="w-24 h-px bg-gold" />
+            <span className="w-2 h-2 rounded-full bg-gold" />
+            <span className="w-24 h-px bg-gold" />
+          </div>
+          <p className="font-serif text-xl md:text-2xl tracking-wide text-pine/80 mb-8">
+            AI/ML &amp; Data Science Leader
           </p>
+          <div className="flex items-center gap-4 mb-16">
+            <span className="w-16 h-px bg-gold" />
+            <p className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase text-gold">
+              Strategy Grounded in Real Impact
+            </p>
+            <span className="w-16 h-px bg-gold" />
+          </div>
           <div className="flex items-center gap-4">
             <a
               href="#writing"
-              className="bg-gold text-slate font-semibold px-6 py-3 rounded-full text-sm tracking-wide hover:bg-sand transition-colors"
+              className="bg-pine text-cream font-semibold px-6 py-3 rounded-full text-sm tracking-wide hover:bg-dusty transition-colors"
             >
               Read my writing
             </a>
             <a
               href="#about"
-              className="border border-cream/40 text-cream font-semibold px-6 py-3 rounded-full text-sm tracking-wide hover:bg-cream/10 transition-colors"
+              className="border border-pine/30 text-pine font-semibold px-6 py-3 rounded-full text-sm tracking-wide hover:bg-pine/5 transition-colors"
             >
               More about me
             </a>
@@ -156,26 +185,45 @@ export default function Home() {
                 Hi, I'm Callie.
               </p>
               <p>
-                I've always loved the space where technology meets real-world decision making.
-                Today I lead AI and data science teams, building products that help people work smarter,
-                make better decisions, and solve problems that aren't obvious at first glance.
+                I lead AI/ML and data science teams that buidl products solving real business problems (and making real money).
               </p>
               <p>
-                I've worked on everything from AI fraud detection and pricing engines
-                to generative AI assistants and an AI-powered calculus tutor that led
-                to Pearson's first NeurIPS paper. What keeps me interested isn't just the latest model,
-                although that is usually fun, but it's figuring out where AI actually belongs and building products that people trust.
+                Over the past decade I've taken machine learning from research labs into production,
+                 shipping everything from fraud detection systems and pricing engines to enterprise 
+                 GenAI platforms and AI-powered education tools. My favorite problems sit somewhere 
+                 between technical possibility and business reality. I lovefiguring out where AI creates
+                  real value, where it doesn't, and how to earn the trust needed for people to actually use it.
               </p>
               <p>
-                I earned a B.S. in Computer Science, a Ph.D. in Computational Bioscience from the University of Colorado Anschutz Medical Campus,
-                and an Executive MBA from Washington University in St. Louis. Along the way I've been fortunate to lead incredible teams,
-                speak at industry conferences, and work across healthcare, logistics, education, and SaaS.
+                My path into data science wasn't exactly planned. I started in computer science because I loved building software, 
+                but I kept finding myself drawn toward biology and the complexity of living systems. That curiosity led me to a Ph.D. 
+                in Computational Bioscience at the University of Colorado Anschutz Medical Campus—a decision that unexpectedly took me 
+                from the Midwest to Denver and changed the direction of my career. What I thought would be a career writing software 
+                became one building intelligent systems instead.
               </p>
               <p>
-                I also have a reputation for being the 'AI-expert who hates AI'. That's not true,
-                I love AI enough to use it to make this website. I'm amazed at the work that can be done.
-                I also believe in being clear on limitations and the value of human intuition. Plus,
-                I think it's really important to touch grass and get away from technology.
+                After nearly a decade in Colorado, I recently returned home to St. Louis to complete my Executive MBA at Washington University 
+                and made the questionable choice to start a family at the same time. So far so good. 
+                The EMBA pushed me to think beyond algorithms and models and spend more time asking the bigger questions: 
+                What problems are actually worth solving? How do you build organizations that embrace AI instead of fearing it? 
+                And how do you make technical decisions that hold up long after the excitement around a new model fades?
+              </p>
+
+              <p>
+                I have earned a rep for being an AI expert who hates AI. That's not totally unfair. 
+                I'm amazed and appreciate of the advancements I've gotten to see in AI in my career.
+                I'm also skeptical of the hype and tendency to over-apply and over-engineer solutions.
+                I also think a lot about the human impact of technology and AI. AI has a lot of potential 
+                to make our lives better. It can also make our lives a lot worse. 
+
+              </p>
+
+              <p>
+                Becoming a parent has also changed how I think about technology. 
+                I spend a lot more time wondering what kind of world we're building and what role AI should play in it. 
+                I don't want a future where technology replaces curiosity, creativity, or human connection.
+                I want one where it helps us make better decisions, frees us to do more meaningful work, and leaves us with more time for the people (and pets) we care about.
+
               </p>
               <div className="flex items-center gap-5 pt-2">
                 <a
@@ -200,20 +248,16 @@ export default function Home() {
               <p className="text-xs font-semibold tracking-widest uppercase text-dusty mb-6">
                 Focus Areas
               </p>
-              <ul className="space-y-4">
-                {[
-                  "AI/ML Strategy & Governance",
-                  "GenAI Enablement",
-                  "Applied ML: LLMs, RAG, NLP, Computer Vision",
-                  "MLOps & Production Systems",
-                  "Team Building",
-                ].map((area) => (
-                  <li
-                    key={area}
-                    className="flex items-center gap-4 text-pine font-medium"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
-                    {area}
+              <ul className="space-y-6">
+                {focusAreas.map((area) => (
+                  <li key={area.title} className="flex gap-4">
+                    <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0 mt-2" />
+                    <div>
+                      <p className="text-pine font-semibold mb-1">{area.title}</p>
+                      <p className="text-sm text-pine/60 leading-relaxed">
+                        {area.description}
+                      </p>
+                    </div>
                   </li>
                 ))}
               </ul>
