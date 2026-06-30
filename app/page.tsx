@@ -61,7 +61,7 @@ export default function Home() {
       <header className="sticky top-0 z-10 border-b border-sand bg-cream/95 backdrop-blur-sm">
         <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
           <a href="#" className="flex items-center gap-3">
-            <img src="/images/logo-cream.png" alt="" className="h-9 w-9 rounded-full object-cover" />
+            <img src="/images/logo-transparent.png" alt="" className="h-9 w-9 object-contain" />
             <span className="font-serif text-lg tracking-wide text-pine">
               Callie Federer
             </span>
