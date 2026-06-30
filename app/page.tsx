@@ -11,26 +11,29 @@ const articles = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-zinc-900" style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>
+    <div className="min-h-screen bg-cream text-pine font-sans">
 
       {/* Nav */}
-      <header className="sticky top-0 z-10 border-b border-zinc-200 bg-white/90 backdrop-blur-sm">
+      <header className="sticky top-0 z-10 border-b border-sand bg-cream/95 backdrop-blur-sm">
         <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <span className="text-sm font-semibold tracking-widest uppercase">
-            Callie Federer
-          </span>
-          <div className="flex items-center gap-8 text-sm font-medium text-zinc-500">
-            <a href="#writing" className="hover:text-zinc-900 transition-colors">
+          <a href="#" className="flex items-center gap-3">
+            <img src="/images/logo-cream.png" alt="" className="h-9 w-9 rounded-full object-cover" />
+            <span className="font-serif text-lg tracking-wide text-pine">
+              Callie Federer
+            </span>
+          </a>
+          <div className="flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-pine/60">
+            <a href="#writing" className="hover:text-gold transition-colors">
               Writing
             </a>
-            <a href="#about" className="hover:text-zinc-900 transition-colors">
+            <a href="#about" className="hover:text-gold transition-colors">
               About
             </a>
             <a
               href="https://github.com/cfederer"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-zinc-900 transition-colors"
+              className="hover:text-gold transition-colors"
             >
               GitHub
             </a>
@@ -38,7 +41,7 @@ export default function Home() {
               href="https://linkedin.com/in/callie-federer"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-zinc-900 transition-colors"
+              className="hover:text-gold transition-colors"
             >
               LinkedIn
             </a>
@@ -46,28 +49,51 @@ export default function Home() {
         </nav>
       </header>
 
+      {/* Hero */}
+      <section className="relative isolate overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="/images/mountain1.jpeg"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-slate/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate/80 via-slate/40 to-slate/40" />
+        </div>
+        <div className="mx-auto max-w-5xl px-6 py-40 md:py-56">
+          <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-6">
+            AI &amp; Data Science Leader
+          </p>
+          <h1 className="font-serif text-5xl md:text-6xl leading-tight text-cream max-w-2xl mb-6">
+            AI strategy with a <em className="italic text-sand">human</em> perspective.
+          </h1>
+          <p className="max-w-lg text-lg leading-relaxed text-cream/80 mb-10">
+            Bridging people, technology, and real-world impact.
+          </p>
+          <div className="flex items-center gap-4">
+            <a
+              href="#writing"
+              className="bg-gold text-slate font-semibold px-6 py-3 rounded-full text-sm tracking-wide hover:bg-sand transition-colors"
+            >
+              Read my writing
+            </a>
+            <a
+              href="#about"
+              className="border border-cream/40 text-cream font-semibold px-6 py-3 rounded-full text-sm tracking-wide hover:bg-cream/10 transition-colors"
+            >
+              More about me
+            </a>
+          </div>
+        </div>
+      </section>
+
       <main className="mx-auto max-w-5xl px-6">
 
-        {/* Hero */}
-        <section className="py-24 border-b border-zinc-200">
-          <p className="text-xs font-semibold tracking-widest uppercase text-zinc-400 mb-8">
-            Data Science · AI · Machine Learning
-          </p>
-          <h1 className="text-7xl font-bold tracking-tight leading-[1] text-zinc-900 mb-10">
-            Callie<br />Federer.
-          </h1>
-          <p className="max-w-lg text-lg leading-relaxed text-zinc-500">
-            I work at the intersection of data, AI, and real-world systems.
-            Here I share what I&apos;m learning, building, and thinking about.
-          </p>
-        </section>
-
         {/* Writing */}
-        <section id="writing" className="py-20 border-b border-zinc-200">
-          <p className="text-xs font-semibold tracking-widest uppercase text-zinc-400 mb-12">
-            Writing
-          </p>
-          <div className="divide-y divide-zinc-100">
+        <section id="writing" className="py-24 border-b border-sand">
+          <p className="font-serif text-3xl text-pine mb-3">Writing</p>
+          <div className="w-12 h-px bg-gold mb-12" />
+          <div className="divide-y divide-sand">
             {articles.map((article) => (
               <a
                 key={article.slug}
@@ -76,21 +102,21 @@ export default function Home() {
               >
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-semibold tracking-wider uppercase text-zinc-400">
+                    <span className="text-xs font-semibold tracking-wider uppercase text-gold">
                       {article.category}
                     </span>
-                    <span className="text-zinc-300">·</span>
-                    <span className="text-xs text-zinc-400">{article.date}</span>
+                    <span className="text-sage">·</span>
+                    <span className="text-xs text-dusty">{article.date}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-zinc-900 mb-2 group-hover:text-zinc-500 transition-colors">
+                  <h3 className="font-serif text-2xl text-pine mb-2 group-hover:text-dusty transition-colors">
                     {article.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-zinc-500 max-w-2xl">
+                  <p className="text-sm leading-relaxed text-pine/60 max-w-2xl">
                     {article.excerpt}
                   </p>
                 </div>
                 <div className="flex-shrink-0 pt-2">
-                  <span className="text-sm font-medium text-zinc-300 group-hover:text-zinc-900 transition-colors">
+                  <span className="text-sm font-medium text-sage group-hover:text-gold transition-colors">
                     Read →
                   </span>
                 </div>
@@ -100,48 +126,47 @@ export default function Home() {
         </section>
 
         {/* About */}
-        <section id="about" className="py-20">
-          <p className="text-xs font-semibold tracking-widest uppercase text-zinc-400 mb-12">
-            About
-          </p>
+        <section id="about" className="py-24">
+          <p className="font-serif text-3xl text-pine mb-3">About</p>
+          <div className="w-12 h-px bg-gold mb-12" />
           <img
             src="/images/hike-photo.jpeg"
             alt="Callie hiking in the Rockies with her husband and dogs"
             className="w-full max-w-2xl mb-12 rounded"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <div className="space-y-5 text-zinc-600 leading-relaxed">
+            <div className="space-y-5 text-pine/70 leading-relaxed">
               <p>
                 Hi, I'm Callie.
               </p>
               <p>
                 I've always loved the space where technology meets real-world decision making.
-                Today I lead AI and data science teams, building products that help people work smarter, 
+                Today I lead AI and data science teams, building products that help people work smarter,
                 make better decisions, and solve problems that aren't obvious at first glance.
               </p>
               <p>
-                I've worked on everything from AI fraud detection and pricing engines 
-                to generative AI assistants and an AI-powered calculus tutor that led 
-                to Pearson's first NeurIPS paper. What keeps me interested isn't just the latest model, 
+                I've worked on everything from AI fraud detection and pricing engines
+                to generative AI assistants and an AI-powered calculus tutor that led
+                to Pearson's first NeurIPS paper. What keeps me interested isn't just the latest model,
                 although that is usually fun, but it's figuring out where AI actually belongs and building products that people trust.
               </p>
               <p>
-                I earned a B.S. in Computer Science, a Ph.D. in Computational Bioscience from the University of Colorado Anschutz Medical Campus, 
-                and an Executive MBA from Washington University in St. Louis. Along the way I've been fortunate to lead incredible teams, 
+                I earned a B.S. in Computer Science, a Ph.D. in Computational Bioscience from the University of Colorado Anschutz Medical Campus,
+                and an Executive MBA from Washington University in St. Louis. Along the way I've been fortunate to lead incredible teams,
                 speak at industry conferences, and work across healthcare, logistics, education, and SaaS.
               </p>
               <p>
                 I also have a reputation for being the 'AI-expert who hates AI'. That's not true,
                 I love AI enough to use it to make this website. I'm amazed at the work that can be done.
                 I also believe in being clear on limitations and the value of human intuition. Plus,
-                I think it's really important to touch grass and get away from technology. 
-              </p>              
+                I think it's really important to touch grass and get away from technology.
+              </p>
               <div className="flex items-center gap-5 pt-2">
                 <a
                   href="https://github.com/cfederer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-semibold text-zinc-900 border-b border-zinc-900 hover:text-zinc-500 hover:border-zinc-500 transition-colors pb-0.5"
+                  className="text-sm font-semibold text-pine border-b border-pine hover:text-gold hover:border-gold transition-colors pb-0.5"
                 >
                   GitHub
                 </a>
@@ -149,14 +174,14 @@ export default function Home() {
                   href="https://linkedin.com/in/callie-federer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-semibold text-zinc-900 border-b border-zinc-900 hover:text-zinc-500 hover:border-zinc-500 transition-colors pb-0.5"
+                  className="text-sm font-semibold text-pine border-b border-pine hover:text-gold hover:border-gold transition-colors pb-0.5"
                 >
                   LinkedIn
                 </a>
               </div>
             </div>
             <div>
-              <p className="text-xs font-semibold tracking-widest uppercase text-zinc-400 mb-6">
+              <p className="text-xs font-semibold tracking-widest uppercase text-dusty mb-6">
                 Focus Areas
               </p>
               <ul className="space-y-4">
@@ -169,9 +194,9 @@ export default function Home() {
                 ].map((area) => (
                   <li
                     key={area}
-                    className="flex items-center gap-4 text-zinc-800 font-medium"
+                    className="flex items-center gap-4 text-pine font-medium"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
                     {area}
                   </li>
                 ))}
@@ -182,15 +207,18 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-200">
-        <div className="mx-auto max-w-5xl px-6 py-8 flex items-center justify-between">
-          <span className="text-sm text-zinc-400">© 2026 Callie Federer</span>
-          <div className="flex items-center gap-6 text-sm text-zinc-400">
+      <footer className="bg-slate text-cream">
+        <div className="mx-auto max-w-5xl px-6 py-10 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <img src="/images/logo-green.png" alt="" className="h-8 w-8 rounded-full object-cover" />
+            <span className="text-sm text-cream/60">© 2026 Callie Federer</span>
+          </div>
+          <div className="flex items-center gap-6 text-sm text-cream/70">
             <a
               href="https://github.com/cfederer"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-zinc-900 transition-colors"
+              className="hover:text-gold transition-colors"
             >
               GitHub
             </a>
@@ -198,7 +226,7 @@ export default function Home() {
               href="https://linkedin.com/in/callie-federer"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-zinc-900 transition-colors"
+              className="hover:text-gold transition-colors"
             >
               LinkedIn
             </a>

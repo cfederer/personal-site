@@ -2,13 +2,26 @@ import React from "react";
 
 export default function PostPage() {
   return (
-    <div className="min-h-screen bg-white text-zinc-900" style={{ fontFamily: "var(--font-geist-sans), sans-serif" }}>
+    <div className="min-h-screen bg-cream text-pine font-sans">
+      <header className="sticky top-0 z-10 border-b border-sand bg-cream/95 backdrop-blur-sm">
+        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+          <a href="/" className="flex items-center gap-3">
+            <img src="/images/logo-cream.png" alt="" className="h-9 w-9 rounded-full object-cover" />
+            <span className="font-serif text-lg tracking-wide text-pine">
+              Callie Federer
+            </span>
+          </a>
+          <a href="/#writing" className="text-xs font-semibold tracking-widest uppercase text-pine/60 hover:text-gold transition-colors">
+            Writing
+          </a>
+        </nav>
+      </header>
       <main className="mx-auto max-w-5xl px-6 py-20">
         <article>
-          <p className="text-xs font-semibold tracking-widest uppercase text-zinc-400 mb-4">Writing</p>
-          <h1 className="text-4xl font-bold text-zinc-900 mb-4">How to Have “The Talk” With Your Kids (About AI)</h1>
-          <p className="text-sm text-zinc-500 mb-8">Callie Federer — Director of Data Science | AI Realist | Anxious Adventurer | Lifetime Student</p>
-          <p className="text-sm text-zinc-400 mb-8">February 26, 2026</p>
+          <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-4">Writing</p>
+          <h1 className="font-serif text-4xl text-pine mb-4">How to Have “The Talk” With Your Kids (About AI)</h1>
+          <p className="text-sm text-pine/60 mb-2">Callie Federer — Director of Data Science | AI Realist | Anxious Adventurer | Lifetime Student</p>
+          <p className="text-sm text-dusty mb-8">February 26, 2026</p>
 
           <img
             src="/images/how-talk-kids-ai-placeholder.png"
@@ -16,7 +29,7 @@ export default function PostPage() {
             className="w-full max-w-2xl mb-8 rounded"
           />
 
-          <div className="prose max-w-none text-zinc-700">
+          <div className="max-w-none text-pine/80 leading-relaxed space-y-5 [&_h3]:font-serif [&_h3]:text-pine [&_h3]:text-2xl [&_h3]:pt-4 [&_a]:text-gold [&_a]:underline [&_a]:underline-offset-2 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2">
             <p>I’m over here on maternity leave thinking about AI.</p>
 
             <p>And now that I have an 8-week-old baby boy, I’m thinking even more about the future of jobs. There’s a new tough conversation in town with your kids, and I’m just finally ready to give unsolicited parenting advice now that I’m in the club.</p>
@@ -98,7 +111,7 @@ export default function PostPage() {
           </div>
 
           <div className="pt-12">
-            <a href="/#writing" className="text-sm font-medium text-zinc-600">← Back to Writing</a>
+            <a href="/#writing" className="text-sm font-medium text-pine hover:text-gold transition-colors">← Back to Writing</a>
           </div>
         </article>
       </main>
