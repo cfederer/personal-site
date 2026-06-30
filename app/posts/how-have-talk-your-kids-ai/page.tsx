@@ -20,7 +20,6 @@ export default function PostPage() {
         <article>
           <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-4">Writing</p>
           <h1 className="font-serif text-4xl text-pine mb-4">How to Have “The Talk” With Your Kids (About AI)</h1>
-          <p className="text-sm text-pine/60 mb-2">Callie Federer — Director of Data Science | AI Realist | Anxious Adventurer | Lifetime Student</p>
           <p className="text-sm text-dusty mb-8">February 26, 2026</p>
 
           <img

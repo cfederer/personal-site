@@ -1,5 +1,13 @@
 const articles = [
   {
+    slug: "meal-prep-app",
+    title: "I Built an End to End Meal Prep App & I Hated It",
+    date: "Jun 30, 2026",
+    category: "Side Projects · AI",
+    excerpt:
+      "Building a meal-planning app taught me the most valuable AI systems don't replace decisions, they remove the boring work and leave you in control of the parts that need judgment.",
+  },
+  {
     slug: "how-have-talk-your-kids-ai",
     title: "How to Have “The Talk” With Your Kids (About AI)",
     date: "Feb 26, 2026",
