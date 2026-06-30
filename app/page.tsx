@@ -191,15 +191,15 @@ export default function Home() {
                 Over the past decade I've taken machine learning from research labs into production,
                  shipping everything from fraud detection systems and pricing engines to enterprise 
                  GenAI platforms and AI-powered education tools. My favorite problems sit somewhere 
-                 between technical possibility and business reality. I lovefiguring out where AI creates
+                 between technical possibility and business reality. I love figuring out where AI creates
                   real value, where it doesn't, and how to earn the trust needed for people to actually use it.
               </p>
               <p>
                 My path into data science wasn't exactly planned. I started in computer science because I loved building software, 
-                but I kept finding myself drawn toward biology and the complexity of living systems. That curiosity led me to a Ph.D. 
-                in Computational Bioscience at the University of Colorado Anschutz Medical Campus—a decision that unexpectedly took me 
-                from the Midwest to Denver and changed the direction of my career. What I thought would be a career writing software 
-                became one building intelligent systems instead.
+                but I kept finding myself drawn towards biology and the complexity of living systems. That curiosity led me to a Ph.D. 
+                in Computational Bioscience, a decision that unexpectedly took me 
+                from the Midwest to Denver and changed the direction of my career from what I thought would be more about writing software 
+                to building intelligent systems instead.
               </p>
               <p>
                 After nearly a decade in Colorado, I recently returned home to St. Louis to complete my Executive MBA at Washington University 
@@ -211,10 +211,10 @@ export default function Home() {
 
               <p>
                 I have earned a rep for being an AI expert who hates AI. That's not totally unfair. 
-                I'm amazed and appreciate of the advancements I've gotten to see in AI in my career.
+                I'm amazed and appreciative of the advancements I've gotten to see in AI in my career.
                 I'm also skeptical of the hype and tendency to over-apply and over-engineer solutions.
-                I also think a lot about the human impact of technology and AI. AI has a lot of potential 
-                to make our lives better. It can also make our lives a lot worse. 
+                I alsothink a lot about the human impact of technology and AI. AI has a lot of potential 
+                to make our lives better. And worse. 
 
               </p>
 
