@@ -185,7 +185,7 @@ export default function Home() {
                 Hi, I'm Callie.
               </p>
               <p>
-                I lead AI/ML and data science teams that buidl products solving real business problems (and making real money).
+                I lead AI/ML and data science teams that build products solving real business problems (and making real money).
               </p>
               <p>
                 Over the past decade I've taken machine learning from research labs into production,
