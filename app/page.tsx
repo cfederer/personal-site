@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const focusAreas = [
   {
     title: "Product Strategy",
@@ -54,19 +58,21 @@ const articles = [
 ];
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-cream text-pine font-sans">
 
       {/* Nav */}
       <header className="sticky top-0 z-10 border-b border-sand bg-cream/95 backdrop-blur-sm">
         <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <a href="#" className="flex items-center gap-3">
-            <img src="/images/logo-transparent.png" alt="" className="h-9 w-9 object-contain" />
-            <span className="font-serif text-lg tracking-wide text-pine">
+          <a href="#" className="flex items-center gap-2 min-w-0">
+            <img src="/images/logo-transparent.png" alt="" className="h-8 w-8 md:h-9 md:w-9 object-contain flex-shrink-0" />
+            <span className="font-serif text-base md:text-lg tracking-wide text-pine whitespace-nowrap">
               Callie Federer
             </span>
           </a>
-          <div className="flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-pine/60">
+          <div className="hidden md:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase text-pine/60">
             <a href="#writing" className="hover:text-gold transition-colors">
               Writing
             </a>
@@ -90,7 +96,44 @@ export default function Home() {
               LinkedIn
             </a>
           </div>
+          <button
+            type="button"
+            onClick={() => setMenuOpen((open) => !open)}
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            className="md:hidden flex-shrink-0 p-2 -mr-2 text-pine"
+          >
+            <span className="block w-5 h-px bg-pine mb-1.5" />
+            <span className="block w-5 h-px bg-pine mb-1.5" />
+            <span className="block w-5 h-px bg-pine" />
+          </button>
         </nav>
+        {menuOpen && (
+          <div className="md:hidden border-t border-sand bg-cream px-6 py-4 flex flex-col gap-4 text-xs font-semibold tracking-widest uppercase text-pine/60">
+            <a href="#writing" onClick={() => setMenuOpen(false)} className="hover:text-gold transition-colors">
+              Writing
+            </a>
+            <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-gold transition-colors">
+              About
+            </a>
+            <a
+              href="https://github.com/cfederer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/callie-federer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              LinkedIn
+            </a>
+          </div>
+        )}
       </header>
 
       {/* Hero */}
