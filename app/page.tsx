@@ -65,7 +65,7 @@ export default function Home() {
 
       {/* Nav */}
       <header className="sticky top-0 z-10 border-b border-sand bg-cream/95 backdrop-blur-sm">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+        <nav className="relative mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
           <a href="#" className="flex items-center gap-2 min-w-0">
             <img src="/images/logo-transparent.png" alt="" className="h-8 w-8 md:h-9 md:w-9 object-contain flex-shrink-0" />
             <span className="font-serif text-base md:text-lg tracking-wide text-pine whitespace-nowrap">
@@ -107,33 +107,33 @@ export default function Home() {
             <span className="block w-5 h-px bg-pine mb-1.5" />
             <span className="block w-5 h-px bg-pine" />
           </button>
+          {menuOpen && (
+            <div className="md:hidden absolute right-6 top-full mt-2 w-44 rounded-lg border border-sand bg-cream shadow-lg px-5 py-4 flex flex-col gap-4 text-xs font-semibold tracking-widest uppercase text-pine/60">
+              <a href="#writing" onClick={() => setMenuOpen(false)} className="hover:text-gold transition-colors">
+                Writing
+              </a>
+              <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-gold transition-colors">
+                About
+              </a>
+              <a
+                href="https://github.com/cfederer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold transition-colors"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/callie-federer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold transition-colors"
+              >
+                LinkedIn
+              </a>
+            </div>
+          )}
         </nav>
-        {menuOpen && (
-          <div className="md:hidden border-t border-sand bg-cream px-6 py-4 flex flex-col gap-4 text-xs font-semibold tracking-widest uppercase text-pine/60">
-            <a href="#writing" onClick={() => setMenuOpen(false)} className="hover:text-gold transition-colors">
-              Writing
-            </a>
-            <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-gold transition-colors">
-              About
-            </a>
-            <a
-              href="https://github.com/cfederer"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gold transition-colors"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/callie-federer"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gold transition-colors"
-            >
-              LinkedIn
-            </a>
-          </div>
-        )}
       </header>
 
       {/* Hero */}
