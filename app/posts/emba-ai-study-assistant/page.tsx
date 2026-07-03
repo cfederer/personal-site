@@ -19,7 +19,7 @@ export default function PostPage() {
       <main className="mx-auto max-w-5xl px-6 py-20">
         <article>
           <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-4">Writing</p>
-          <h1 className="font-serif text-4xl text-pine mb-4">Building an AI Study Assistant for My Executive MBA</h1>
+          <h1 className="font-serif text-4xl text-pine mb-4">Building a Lifelong Executive MBA Guide</h1>
           <p className="text-sm text-dusty mb-8">July 3, 2026</p>
 
           <img
@@ -34,7 +34,7 @@ export default function PostPage() {
 
             <p>
               The <a href="https://olin.wustl.edu/EN-US/Academic-Programs/MBA/executive/Pages/default.aspx" target="_blank" rel="noreferrer">Olin Business School Executive MBA</a> at
-              Washington University in St. Louis is a 21-month cohort-based program designed for working professionals.
+              Washington University in St. Louis is a 20-month cohort-based program designed for working professionals.
               It covers the full range of business disciplines (strategy, finance, operations, marketing, economics,
               accounting, leadership, and more) across roughly 25 courses. Students come in with deep professional
               experience and go through the program together as a cohort, which makes the peer learning component just
@@ -56,18 +56,19 @@ export default function PostPage() {
             <p>
               That said, AI is genuinely excellent at one specific thing: <strong>making a quick reference back to
               something you already know</strong>. If you&apos;ve done the work, having a well-organized summary you
-              can query conversationally is a massive time-saver before exams, during case prep, or when you&apos;re
-              trying to connect ideas across courses. Obviously, this same approach can be applied to any other courses 
+              can query conversationally is a massive time-saver before exams, during case prep, when you&apos;re
+              trying to connect ideas across courses, and especially when are you applying learnings to actual
+              situations at work. Obviously, this same approach can be applied to any other courses 
               or training where you have a lot of material to synthesize and recall.
             </p>
 
             <p>Here&apos;s the workflow I used:</p>
 
             <ol>
-              <li><strong>Stored everything in organized folders</strong> — lecture slides (<code>.pptx</code>), PDFs, readings, and my own personal notes and case prep write-ups, organized by course.</li>
+              <li><strong>Stored everything in organized folders</strong>: lecture slides (<code>.pptx</code>), PDFs, readings, and my own personal notes and case prep write-ups, organized by course.</li>
               <li><strong>Had Claude systematically go through each folder</strong> and generate a consolidated readout per course: key frameworks, cases studied, required readings, analytical reminders, and course themes. These weren&apos;t replacements for the source material; they were structured summaries built <em>from</em> it.</li>
-              <li><strong>Combined all course readouts into a single master document</strong> and shared it with my cohort as a study resource.</li>
-              <li><strong>Set up a Claude Project</strong> that references the master readout and uses a custom system prompt to behave as a study assistant — so I (and my classmates) can ask questions across all coursework in plain language and get cited, synthesized answers.</li>
+              <li><strong>Combined all course readouts into a single overview document</strong> and shared it with my cohort as a resource.</li>
+              <li><strong>Set up a Claude Project</strong> that references the overview readout and uses a custom system prompt to behave as an ongoing assistant, so I can ask questions across all coursework in plain language and get cited, synthesized answers.</li>
             </ol>
 
             <p>
@@ -87,10 +88,10 @@ export default function PostPage() {
 
             <p>You need a single Word document that consolidates frameworks, cases, readings, and reminders across all courses.</p>
 
-            <p><strong>Option A — Use the EMBA 60 Shared Readout from me </strong> <em>(fastest)</em></p>
-            <p>File: <code>EMBA_60_Complete_Readout.docx</code> — covers all courses, ready to upload.</p>
+            <p><strong>Option A: Use the EMBA 60 Shared Readout from me </strong> <em>(fastest)</em></p>
+            <p>File: <code>EMBA_60_Complete_Readout.docx</code> - covers all courses, ready to upload.</p>
 
-            <p><strong>Option B — Build Your Own</strong> <em>(more personal, ~2–4 hours)</em></p>
+            <p><strong>Option B: Build Your Own</strong> <em>(more personal, ~2–4 hours)</em></p>
             <p>
               If you want a version that includes your own notes, reflections, and case prep, you can build individual
               course readouts using Claude and then combine them. See the appendix below for instructions.
@@ -115,7 +116,7 @@ export default function PostPage() {
 
             <hr />
 
-            <h3>Step 3 — Paste This System Prompt</h3>
+            <h3>Step 3: Paste This System Prompt</h3>
 
             <p>Copy everything below into the &quot;Project instructions&quot; field:</p>
 
@@ -195,14 +196,11 @@ If asked for something very specific, say so and offer the closest summary.`}</p
 
             <p><strong>The process:</strong></p>
             <ol>
-              <li>Connect your EMBA folder to Claude (File → Select Folder)</li>
-              <li>For each course, say: <em>&quot;For the [Course Name] folder, read all the files and create a consolidated class readout with key themes, frameworks, cases studied, required readings, and key reminders. Save it as a Word doc in that folder.&quot;</em></li>
-              <li>Repeat for each course, or ask Claude to process all folders at once</li>
-              <li>Ask Claude to build a master doc: <em>&quot;Create one Word doc with a 2-page overview of all courses with hyperlinks to each full readout below&quot;</em></li>
-              <li>Upload the master doc to a Claude Project and add the system prompt from Step 3</li>
+              <li>Connect your EMBA folder (where you should have one folder per course) to Claude (File → Select Folder)</li>
+              <li> Tell Claude to go through each folder, read all the files and create a consolidated class readout with key themes, frameworks, cases studied, required readings, and key reminders. Save it as a Word doc in that folder. </li>
+              <li>Ask Claude to build an overview doc: <em>&quot;Create one Word doc with an overview of all courses with hyperlinks to each full readout below&quot;</em></li>
+              <li>Upload the main doc to a Claude Project and add the system prompt from Step 3 (or point the project to your entire personal collection) </li>
             </ol>
-
-            <p><strong>Sharing with classmates:</strong> If you want to share your readouts, ask Claude to <em>&quot;make a clean copy of each readout with personal assignments and reflections removed.&quot;</em> It will strip personal content while keeping all the course frameworks, cases, and readings intact.</p>
 
             <p><strong>What Claude can read:</strong> PowerPoint slides (<code>.pptx</code>), PDFs, Word documents (<code>.docx</code>), and plain text files. It works best when your course materials include lecture slides and a course packet PDF.</p>
 
