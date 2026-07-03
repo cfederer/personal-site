@@ -32,6 +32,14 @@ const focusAreas = [
 
 const articles = [
   {
+    slug: "emba-ai-study-assistant",
+    title: "Building an AI Study Assistant for My Executive MBA",
+    date: "Jul 3, 2026",
+    category: "MBA",
+    excerpt:
+      "How I used Claude to turn a semester of course materials into a study assistant for my EMBA cohort — plus a guide to set up your own.",
+  },
+  {
     slug: "meal-prep-app",
     title: "I Built an End to End Meal Prep App & I Hated It",
     date: "Jun 30, 2026",
