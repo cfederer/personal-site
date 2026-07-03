@@ -310,7 +310,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-slate text-cream">
+      <footer className="bg-forest text-cream">
         <div className="mx-auto max-w-5xl px-6 py-10 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/images/logo-green.png" alt="" className="h-8 w-8 rounded-full object-cover" />
