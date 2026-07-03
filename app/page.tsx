@@ -37,7 +37,7 @@ const articles = [
     date: "Jul 3, 2026",
     category: "MBA",
     excerpt:
-      "How I used Claude to turn a semester of course materials into a study assistant for my EMBA cohort — plus a guide to set up your own.",
+      "How I used Claude to turn an entire degree of materials into a lifelong guide. ",
   },
   {
     slug: "meal-prep-app",
