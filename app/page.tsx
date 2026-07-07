@@ -264,7 +264,7 @@ export default function Home() {
                 I have earned a rep for being an AI expert who hates AI. That's not totally unfair. 
                 I'm amazed and appreciative of the advancements I've gotten to see in AI in my career.
                 I'm also skeptical of the hype and tendency to over-apply and over-engineer solutions.
-                I alsothink a lot about the human impact of technology and AI. AI has a lot of potential 
+                I also think a lot about the human impact of technology and AI. AI has a lot of potential 
                 to make our lives better. And worse. 
 
               </p>
